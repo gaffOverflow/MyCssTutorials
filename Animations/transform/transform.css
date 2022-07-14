@@ -1,0 +1,70 @@
+/* transform: translate X, Y. scale X, Y. rotate Z, skew X, Y...*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* translate X, Y */
+
+.one {
+  background: red;
+  transform: translateX(20px);
+}
+.two {
+  background: green;
+  transform: translateY(30px);
+}
+.three {
+  background: blue;
+  transform: translate(20px, 30px);
+}
+
+/* scale X, Y. */
+
+.four {
+  background: black;
+  transform: scaleX(0.5);
+}
+.five {
+  background: black;
+  transform: scaleY(0.5);
+}
+.six {
+  background: black;
+  transform: scale(0.5);
+}
+
+/* rotate */
+
+.seven {
+  background: black;
+  transform: rotate(120deg);
+}
+.eight {
+  background: linear-gradient(red, blue, green);
+  transform: rotateZ(90deg);
+  border: 1px solid;
+}
+.nine {
+  background: rgb(138, 30, 91);
+  transform: rotateY(30deg);
+}
+
+/* skew */
+
+.ten {
+  background: yellow;
+  transform: skewX(10deg);
+}
+.eleven {
+  background: linear-gradient(120deg, red, blue, green);
+  transform: skewY(10deg);
+  border: 1px solid;
+}
+.twelve {
+  background: repeating-radial-gradient(green, red, yellow, orange);
+  transform: skew(-5deg, -5deg);
+}

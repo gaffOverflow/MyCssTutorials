@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 60vw;
+  margin: 40px auto;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  background: #aabbee;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+article {
+  /* height: 40vh; */
+}
+.main > h3 {
+  color: green;
+  padding: 20px;
+}
+.main p {
+  padding: 5px 20px 30px;
+}
+.left {
+  background: #a0ffff;
+  /* width: 50%; */
+  flex-basis: 1;
+}
+.left h4 {
+  padding: 20px;
+  color: green;
+}
+.left p {
+  padding: 0px 20px;
+}
+span {
+  font-size: 50px;
+  color: chartreuse;
+}
+#per {
+  font-size: 15px;
+  color: green;
+  font-weight: 600;
+}
+button {
+  padding: 5% 20%;
+  border-radius: 10px;
+  background: greenyellow;
+  border: 3px solid greenyellow;
+  box-shadow: 0 0 5px whitesmoke;
+  font-weight: 600;
+  margin: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  background: cadetblue;
+}
+.right h4 {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+.right p {
+  padding: 0em 1.5em 1.5em 1.5em;
+}
+div {
+  background: rgba(193, 225, 193, 0.445);
+  display: flex;
+  flex-grow: 1;
+}
+h3,
+h4,
+#per {
+  text-transform: capitalize;
+}
+@media screen and (max-width: 600px) {
+  div,
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.left,
+.right {
+  flex: 1;
+}

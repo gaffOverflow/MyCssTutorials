@@ -1,0 +1,45 @@
+/* psuede element ::before ::after CONTENT not element
+content:" " ---required
+img --- does not work
+
+ */
+p::before {
+  content: "before ";
+  font-weight: 700;
+  font-size: 30px;
+  color: red;
+}
+p::after {
+  content: " after ";
+  font-weight: 700;
+  font-size: 30px;
+  color: blueviolet;
+}
+.p::before {
+  /* adding block element to pseudo */
+  content: "before ";
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(16, 147, 158);
+  display: block;
+  background: greenyellow;
+}
+.p::after {
+  content: "after ";
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(16, 147, 158);
+  display: inline-block;
+  background: greenyellow;
+  height: 60px;
+  padding: 30px;
+}
+div::after {
+  content: " ";
+  background: greenyellow;
+  display: block;
+  height: 60px;
+  padding: 30px;
+}

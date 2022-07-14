@@ -1,0 +1,65 @@
+div {
+  height: 100px;
+  width: 200px;
+  background: aqua;
+  margin-top: 5px;
+  transition: 1s ease;
+}
+.transition:hover {
+  transform: translateX(100px);
+  background: orangered;
+}
+.animation{
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  /* animation-iteration-count: infinite; */
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  0% {
+    transform: rotateZ(120deg);
+  }
+  25% {
+    transform: translateX(100px);
+    background: orangered;
+  }
+  50%{
+    border-radius: 40%;
+
+  }
+  75%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: skewX(40deg);
+    opacity: 0.3;
+  }
+}
+
+/* animation short hand */
+
+.animation-shorthand{
+animation: move 3s ease /* infinite*/ backwards;
+}
+
+@keyframes move {
+  0% {
+    transform: rotateZ(120deg);
+  }
+  25% {
+    transform: translateX(100px);
+    background: orangered;
+  }
+  50%{
+    border-radius: 40%;
+
+  }
+  75%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: skewX(40deg);
+    opacity: 0.3;
+  }
+}

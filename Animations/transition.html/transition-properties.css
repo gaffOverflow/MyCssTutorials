@@ -1,0 +1,59 @@
+/* transition-properties 
+note= transition not effective on linear-gradient*/
+
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+ }
+
+ /* long method */
+
+.one {
+  background: red;
+  transition-property: background, transform, border-radius;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  
+}
+
+/* short-hand */
+
+
+.one:hover {
+  background: green;
+  transform: rotateZ(120deg);
+  border-radius: 50%;
+}
+
+/* short-hand */
+
+.two {
+  background: red;
+  transition: width 2s, height 0.4s linear 1s,background 0.8s;
+
+  /* transition: all 2s linear; */
+}
+
+/* image background*/
+.two:hover {
+  background: url(/banner-background/big-img.jpeg) center/cover;
+  width: 200px;
+  height: 200px;
+}
+
+/* transition short-hand */
+.three {
+  background: red;
+  transition: 3s ease-in-out, border-radius 1s ease-out, transform 0.8s linear, margin 0.3s ease-in;
+}
+
+/*short-hand= linear-gradient background with image */
+.three:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 255,0.56),rgba(255, 0, 0,0.56)), url(/banner-background/small-img.jpg) center/cover;
+  border-radius: 40%;
+  transform: skewX(10deg);
+  margin: 0px 10px;
+}

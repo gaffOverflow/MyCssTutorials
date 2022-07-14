@@ -1,0 +1,31 @@
+img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+
+    /* z-index doesn't work with (STATIC POSITION) */
+}
+.banner {
+  height: 70vh;
+  width: 80vw;
+  border: 2px solid coral;
+  margin: 20px;
+  position: relative;
+
+  /* z-index doesn't work with (STATIC POSITION) */
+}
+.one {
+  
+}
+.two {
+  top: 30px;
+  left: 30px;
+z-index: -1;
+
+/* z-index pushes item foward or backwards using hyrachy measurement (-1, -2, -3) or (1, 2, 3)*/
+}
+.three{
+  top: 60px;
+  left: 60px;
+  z-index: -2;
+}

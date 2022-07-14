@@ -1,0 +1,35 @@
+/* TRANSITION-TIMING-FUNCTIONS 
+ease= default
+ease= start slow, fast mid, finish slow
+ease-in= start slow, end fast
+ease-out= start fast, end slow
+ease-in-out= start fast, fast mid, slow end (same with ease) 
+linear= start and end with same speed*/
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background: skyblue;
+  margin-top: 5px;
+  transition: 1s;
+}
+div:hover {
+  transform: translateX(100px);
+}
+
+.ease {
+  transition: 1s ease;
+}
+.ease-in {
+  transition: 1s ease-in;
+}
+.ease-out {
+  transition: 1s ease-out;
+}
+.ease-in-out {
+  transition: 1s ease-in-out;
+}
+.linear {
+  transition: 1s linear;
+}

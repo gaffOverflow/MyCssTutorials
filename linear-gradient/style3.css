@@ -1,0 +1,51 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: orange;
+}
+.banner {
+  background: url(../banner-background/big-img.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 80vh;
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0, 0.9)),
+    url(../banner-background/big-img.jpeg) center/cover no-repeat fixed;
+}
+nav {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url(../banner-background/big-img.jpeg) center/cover no-repeat fixed;
+  height: 50px;
+  position: fixed;
+  min-width: 100vw;
+}
+ul li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  justify-items: center;
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 1em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+}
+ul li a:hover {
+  color: orange;
+}

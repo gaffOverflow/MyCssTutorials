@@ -1,0 +1,42 @@
+.grand-parent {
+  /* static position is html document format/default structure  */
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
+  position: static;
+}
+.child {
+  /* relative element is used to contain absoulte element */
+  background: blue;
+  text-align: right;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  /* it shift the document by calculating further from the parent element and can exced the parent element on the opposite angle if calculation is out of porpotion */
+}
+.parent {
+  /* absolute positioning seperate docment from html document format (it floats on it own)(lock child element to nearest realtive-parent element)*/
+  background: green;
+  position: relative;
+  min-height: 40vh;
+}
+.grand-child {
+  /* fixed position arranges document glue to viewport (it moves along with the viewport)*/
+  background: lightcoral;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+}
+* {
+  background: yellowgreen;
+}
+button {
+  background: red;
+  font-size: 40px;
+  color: aliceblue;
+  position: fixed;
+  bottom: 0;
+}

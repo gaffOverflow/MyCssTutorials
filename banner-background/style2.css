@@ -1,0 +1,70 @@
+/* Default display properties
+Block: Always strat a new line and take full width
+Inline: Does not start and only take up as much as content space */
+
+/* .block{
+  background: blue;
+  color: red;
+  display: inline;
+}
+.inline{
+  background: red;
+  color: blue;
+  display: block;
+} */
+
+/* horizontal centering */
+/* 
+body {
+text-align: center;
+}
+.block {
+  background: blue;
+  color: red;
+  width: 150px;
+  margin:20px auto;
+}
+.inline {
+  background: red;
+  color: blue;
+} */
+
+/* Block: Top Bottom Margin Respected
+Inline: Top Bottom Margin Not Respected */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  height: 400px;
+  color: red;
+  font-weight: 900;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.big-img {
+  background: url(./big-img.jpeg);
+  /* background: url(./folder-img.jpg); */
+  background-size: cover;
+  /* background-position: 0% 95%; */
+  background-position: center;
+  background-attachment: fixed;
+}
+.small-img {
+  background: url(./folder-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 20% 0;
+  border: 2px solid;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.folder-img {
+  background: url(./big-img.jpeg);
+  /* background-size: contain; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

@@ -1,0 +1,78 @@
+body {
+  background: yellowgreen;
+}
+.banner {
+  background: blue;
+}
+h1 {
+  color: aliceblue;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+/* media query */
+/* MIN-WIDTH */
+@media screen and (min-width: 550px) /* min-width display value AFTER */ {
+  body {
+    background: red;
+  }
+  .banner {
+    background: rgb(14, 6, 6);
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background: orangered;
+  }
+  .banner {
+    background: rgb(49, 6, 95);
+  }
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+  }
+}
+
+/* MAX-WIDTH */
+
+.header {
+  background: white;
+  margin-top: 200px;
+  height: 160px;
+}
+h2 {
+  font-size: 40px;
+  background: darkblue;
+}
+/* MAX-WIDTH with the higher measurement is susperior to MAX-WIDTH with lower measurement (it will always overwrite same/similar measure) */
+@media screen and (max-width: 786px) /* max-width display value BEFORE */ {
+  .header {
+    background: dodgerblue;
+    border-radius: 20px;
+  }
+  h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .header {
+    background: dodgerblue;
+    border-radius: 20px;
+  }
+  h2 {
+    /* MAX-WIDTH with the smaller measurement will be overwriting by the MAX-WIDTH with higher measurement (execept they feature diferent element)*/
+
+    /* max-width display value BEFORE */
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 4px solid greenyellow;
+  }
+}

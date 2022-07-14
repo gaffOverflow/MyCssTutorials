@@ -1,0 +1,29 @@
+/* basic selectors */
+* {
+  color:red;
+}
+#heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: blue;
+}
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: green;
+}
+p {
+  letter-spacing: 20px;
+}
+
+/* descendant and child cambinators */
+
+div h1{
+  color: blueviolet;
+}
+
+/* direct descendant */
+
+div>h1{
+  color: orange;
+}

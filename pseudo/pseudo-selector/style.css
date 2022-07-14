@@ -1,0 +1,45 @@
+/* ::first-letter */
+
+p::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+/* ::first-line */
+
+p::first-line {
+  font-weight: 900;
+}
+
+/* :hover */
+
+p:hover {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  background: yellow;
+}
+
+/* :link :visited :hover :active */
+
+a:link {
+  color: deepskyblue;
+}
+a:visited{
+  color: purple;
+}
+a:hover{
+  color: red;
+}
+a:active{
+  color: chartreuse;
+}
+
+/* :root  selector
+use responsive values that are responsive to the root(e.g 5rem)*/
+
+:root{
+  font-size: 150%;
+}
+ul li{
+  font-size: 20px;
+}

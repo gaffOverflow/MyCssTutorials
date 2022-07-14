@@ -1,0 +1,22 @@
+/* text-shadow: Xaxis, Yaxis, Blur, color; */
+/* text-shadow: Xaxis, Yaxis, Blur, color; */
+
+:root {
+  --background: 160deg, red, green, blue;
+}
+h1 {
+  text-shadow: 13px 0px 10px cornflowerblue;
+}
+div {
+  height: 100px;
+  width: 200px;
+  background: linear-gradient(var(--background));
+  transition: all 0.5s linear;
+  box-shadow: -12px -13px 13px blue;
+}
+div:hover {
+  height: 100px;
+  width: 200px;
+  background: linear-gradient(var(--background));
+  box-shadow: 12px 13px 3px red;
+}

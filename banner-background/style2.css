@@ -63,7 +63,7 @@ div {
 }
 .folder-img {
   background: url(./big-img.jpeg);
-  /* background-size: contain; */
+  background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

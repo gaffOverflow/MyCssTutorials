@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pancakeStack</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      /* for the grid template row to recongnize the fr unit, and existing height must be registered */
+      height: 100vh;
+      gap: 0.2rem;
+      margin: 1rem;
+    }
+
+    article {
+      display: grid;
+      place-items: center;
+      background: #ddd;
+      font-size: 2rem;
+    }
+
+    span {
+      color: #aaa;
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <article>auto (header)...<span>can take space automatically</span></article>
+    <article>1fr (main)</article>
+    <article>auto (footer)</article>
+  </main>
+</body>
+
+</html>

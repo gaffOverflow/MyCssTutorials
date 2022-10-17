@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HolyGrail-Layout</title>
+</head>
+
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+article{
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+}
+main{
+  display: grid;
+  grid-template: auto 1fr auto/auto 1fr auto;
+  height: 100vh;
+  gap: 0.2rem;
+}
+article:first-child{
+  grid-column: 1/4;
+  background: #ddd;
+}
+article:last-child{
+  grid-column: 1/4;
+  background: #ddd;
+}
+article:nth-child(2){
+  grid-row: 2/3;
+  background: #aaa;
+}
+article:nth-child(4){
+  grid: 3/4,2/3;
+  background: #aaa;
+}
+article:nth-child(3){
+  grid: 2/3,2/3;
+  background: #aaa;
+}
+
+</style>
+<body>
+  <main>
+    <article>header</article>
+    <article>left</article>
+    <article>main</article>
+    <article>right</article>
+    <article>footer</article>
+  </main>
+</body>
+
+</html>
